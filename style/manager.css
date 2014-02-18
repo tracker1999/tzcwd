@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0;padding:0;}
+section, article, aside, header, footer, nav, dialog, figure {display:block;}
+body {background:#f5f5f5;height:100%;}
+img {vertical-align:top;border:0;}
+ol,ul {list-style:none;}
+li {list-style-type:none;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+em {font-style:normal;}
+a,a:link {color:#0B68C8;text-decoration:none;}
+a:hover {color:#0B68C8;text-decoration:underline;cursor: pointer;}
+table{border-collapse:collapse;}
+table, th, td{border: 1px solid black;}
+.frame{width: 960px; margin: auto;font-family: '微软雅黑','宋体'; padding-top: 15px;}
+.addPane, .personList{padding:20px; border: 1px solid #dedede;background-color: #fff;}
+.addPane h2, .personList h2{font-size: 22px;color: #333;}
+.addPane div{padding: 24px 0px;}
+.addPane span{margin-left: 16px;}
+.addPane input{height: 24px; line-height: 24px;font-size:16px;}
+.addPane #submitButton{height: 30px; padding:0px 8px; cursor: pointer; margin-left: 16px;}
+.personList{padding-bottom: 24px; margin: 16px 0px;}
+.personList table {width: 888px; margin: 24px 0px 0px 16px; border: 1px solid #000000; text-align: center;}
+.personList table tr{background: white; cellspacing:10;}

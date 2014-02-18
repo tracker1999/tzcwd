@@ -1,5 +1,19 @@
-<?php include 'filter/userFilter.php'; ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<?php
+$isVoted = false;
+if ($_COOKIE["uid"]) {
+	$isVoted = true;
+}
+if ($isVoted == false) {
+	$con = mysql_connect("localhost:3306", "root", "123");
+	if (!$con) {
+		die('Could not connect: ' . mysql_error());
+	}
+	mysql_select_db("tracker_grade", $con);
+	$result = mysql_query("SELECT * FROM review_person");
+	mysql_close($con);
+}
+?>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
