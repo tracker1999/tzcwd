@@ -12,12 +12,16 @@ a,a:link {color:#333333;text-decoration:none;}
 a:hover {color:#0B68C8;text-decoration:underline;cursor: pointer;}
 table{border-collapse:collapse;}
 table, th, td{border: 1px solid black;}
-.top-bar{height: 62px; background: url(../images/topbar.png) top left repeat-x;}
-.top-bar .content{width: 960px; height: 62px; line-height: 62px; margin: auto; text-align: right;}
-.top-bar .logout-button{ cursor: pointer; margin-left: 20px;}
-.main{width: 960px; margin: auto; background-color: #F9F9F9;}
-.main .content{margin-top:15px;padding:20px; border: 1px solid #dedede;}
+.top-bar{height: 62px;}
+.top-bar ul li{float: left; padding: 0px 20px;}
+.top-bar ul li.selected{background-color: #0000FF;}
+.top-bar .content{width: 960px; height: 62px; line-height: 62px; margin: auto; text-align: right;border: 1px solid #dedede;background-color: #F9F9F9;}
+.top-bar .logout-button{ cursor: pointer; margin: 0px 20px;}
+.main{width: 960px; margin: auto;}
+.main .content{position: relative; margin-top:15px;padding:20px; border: 1px solid #dedede;background-color: #F9F9F9;}
 .main .content h2{font-size: 22px;color: #333333; text-align: center;}
+.main .content .add{position: absolute; top: 20px; right: 30px;height: 32px;padding: 0 20px;border: solid 1px #2f5bb7;background: #3880f5;color: #fff;cursor: pointer; outline: none;}
 .main .content table {width: 888px; margin: 24px 0px 0px 16px; border: 1px solid #000000; text-align: center;}
 .main .content table tr{background: white; cellspacing:10;}
+.main .content table a{margin-right: 10px;}
 .main .content table input{width: 64px;}

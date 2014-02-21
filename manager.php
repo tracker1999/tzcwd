@@ -1,5 +1,11 @@
 <?php
-
+$con = mysql_connect("localhost:3306", "root", "");
+if (!$con) {
+    die('Could not connect: ' . mysql_error());
+}
+mysql_select_db("tracker_grade", $con);
+$result = mysql_query("SELECT * FROM review_person");
+mysql_close($con);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -28,7 +34,7 @@
 					<?php
 						$index = 1;
 						while(($row = mysql_fetch_array($result)) !== false) {
-							echo '<tr><td>' . $index . "</td><td>" . $row['name'] . "</td><td>" . $row['job'] . '</td><td><a href="javascript:void(0)" data_id="' . $row['id'] . '">删除</a></td></tr>';
+							echo '<tr><td>' . $index . "</td><td>" . $row['department'] . "</td><td>" . $row['name'] . "</td><td>" . $row['job'] . '</td><td><a href="javascript:void(0)" data_id="' . $row['id'] . '">删除</a></td></tr>';
 							$index++;
 						}
 					?>

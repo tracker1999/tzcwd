@@ -17,7 +17,7 @@ mysql_close($con);
 		<script type="text/javascript" src="script/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="script/jquery.cookie.min.js"></script>
 		<script type="text/javascript" src="script/index.js"></script>
-		<title>通州车务段-北京铁路局</title>
+		<title>通州车务段 - 北京铁路局</title>
 	</head>
 	<body>
 		<?php
@@ -25,7 +25,7 @@ mysql_close($con);
 		?>
 		<div class="main">
 			<div class="content">
-				<h2>2013年第四季度机关中层干部岗级测评</h2>
+				<h2>考核人员表</h2>
 				<form action="/action/reviewEmployeeAction.php?o=s" method="POST">
 					<table>
 						<tr><th>编号</th><th>姓名</th><th>部门</th><th>职务</th><th>分数</th></tr>
