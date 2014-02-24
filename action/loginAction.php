@@ -16,7 +16,6 @@ if ($name == '') {
 		die('select employee error: ' . mysql_error());
 	}
 	if (mysql_num_rows($result) > 0) {
-		session_start();
 		$_SESSION['user'] = mysql_fetch_array($result);
 		header('Location: /');
 		exit();
